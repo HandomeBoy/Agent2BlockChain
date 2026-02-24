@@ -38,6 +38,13 @@ controller -> service -> mapper -> model -> req -> resp
           INDEX `idx_production_area` (`production_area`),
           INDEX `idx_created_at` (`created_at`)
        ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='番茄信息表';
+
+-     CREATE TABLE role (
+         Uid VARCHAR(100) NOT NULL,
+         role VARCHAR(100),
+         address VARCHAR(100),
+         PRIMARY KEY (Uid)
+      ) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
 - 中间服务: 包括数据在智能体和数据库之间传输的转换服务,主要包括图片的转换服务:数据库存取-转换成文件-上传到智能体;
 - 示例操作: 
 -    1.将收获图片和加工图片放在application配置文件中声明的路径，并命名成tomato_id.jpg;
