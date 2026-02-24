@@ -1,7 +1,9 @@
 # 项目说明
 > 本项目为农产品溯源系统。以番茄为例,将具有农作物质量检测能力的智能体与Fisco Bcos进行结合。
+> <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8b226413-51a6-40a4-a661-94d32108e852" />
 
-## 项目启动介绍
+
+## 项目介绍
 > 1. 项目中存在三个项目,分别是Solidity2Go(go项目)、get-linker(SpringBoot项目)和src(vue项目),vue项目中文件太多,只上传了主要代码,直接将文件替换新项目中的src目录,并下载依赖。  
 > 2. 项目启动了三个端口服务,分别是8080、8081和5173,确保三个端口未被占用。  
 > 3. Solidity2Go项目实现了调用智能合约方法的功能。文件包含了溯源合约,部署后根据实际的角色私钥替换项目中account目录中对应的私钥文件,并修改配置文件中对应的配置即可;  
@@ -19,6 +21,11 @@
 > 2. Solidity2Go:
 >      在节点控制器中创建configs.toml文件中规定的角色,导入.pem文件,修改Solidity2Go项目中的configs.toml文件中的配置,将所有的文件名和地址改为实际的文件和地址。
 >      导入ca.crt,sdk.crt,sdk.key,TomatoTraceable.abi文件。
-> 3. get-linker:   
->    在本机上创建application.yml文件中tomato下的三个目录,收获时期的图片存储在harvest对应的目录中,加工时期的图片存储在sampling对应的目录中,并将图片命名为生成的tomato_id。  
+> 3. src:
+>      将接口文档和vite.config.js文件移动到根目录。
+> 4. get-linker:   
+>      在本机上创建application.yml文件中tomato下的三个目录,收获时期的图片存储在harvest对应的目录中,加工时期的图片存储在sampling对应的目录中,并将图片命名为生成的tomato_id。   
+> 5. 三个服务全部启动后,通过下图的功能获取tomato_id。<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/62586686-1437-4784-90c7-4bb5c414bc96" />
+>    将对应的图片存储在对应的路径下，改成正确的命名。之后,专家节点执行检测功能是会读取对应的文件。
+
 
