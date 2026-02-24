@@ -1,5 +1,5 @@
 # 项目说明
-> 本项目为农产品溯源系统。以番茄为例,将具有农作物质量检测能力的智能体与Fisco Bcos进行结合,达到替换传统溯源区块链中专家节点的功能。
+> 本项目为农产品溯源系统。以番茄为例,将具有番茄质量检测能力的智能体与Fisco Bcos进行结合,达到替换传统溯源区块链中专家节点的功能。
 > <img width="1912" height="1020" alt="image" src="https://github.com/user-attachments/assets/affe2996-dd3d-41eb-9aae-418931cfee4f" />
 
 ## 项目介绍
