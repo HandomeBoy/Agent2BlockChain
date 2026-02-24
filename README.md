@@ -1,6 +1,7 @@
 # 项目说明
 > 本项目为农产品溯源系统。以番茄为例,将具有番茄质量检测能力的智能体与Fisco Bcos进行结合,达到替换传统溯源区块链中专家节点的功能。
-> <img width="1912" height="1020" alt="image" src="https://github.com/user-attachments/assets/affe2996-dd3d-41eb-9aae-418931cfee4f" />
+> <img width="1912" height="1020" alt="image" src="https://github.com/user-attachments/assets/4e354b5a-cf9f-4a5b-b232-ba6c6c36a7ee" />
+
 
 ## 项目介绍
 > 1. 项目中存在三个项目,分别是Solidity2Go(go项目)、get-linker(SpringBoot项目)和src(vue项目),vue项目中文件太多,只上传了主要代码,直接将文件替换新项目中的src目录,并下载依赖。  
